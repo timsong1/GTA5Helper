@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="anchor" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: gray;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MainController">
+   <children>
+      <ListView fx:id="lvNumber" fixedCellSize="40.0" layoutX="400.0" layoutY="8.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: B3B3B9;" AnchorPane.bottomAnchor="310.0" AnchorPane.leftAnchor="400.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect></ListView>
+      <Button fx:id="btnOpen" layoutX="101.0" layoutY="142.0" mnemonicParsing="false" onAction="#btnOpenClick" prefHeight="48.0" prefWidth="166.0" text="開啟" AnchorPane.bottomAnchor="410.0" AnchorPane.leftAnchor="101.0" AnchorPane.topAnchor="142.0">
+         <font>
+            <Font size="24.0" />
+         </font></Button>
+      <Button fx:id="btnClose" disable="true" layoutX="101.0" layoutY="210.0" mnemonicParsing="false" onAction="#btnCloseClick" prefHeight="48.0" prefWidth="166.0" text="關閉" AnchorPane.leftAnchor="101.0">
+         <font>
+            <Font size="24.0" />
+         </font></Button>
+      <Label layoutX="33.0" layoutY="12.0" prefHeight="141.0" prefWidth="334.0" text="按開啟即可開始掛機&#10;如要關閉程式請先按&quot;關閉&quot;&#10;" textAlignment="CENTER" textOverrun="CLIP" wrapText="true" AnchorPane.leftAnchor="33.0">
+         <font>
+            <Font name="System Bold" size="28.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblNumber" layoutX="58.0" layoutY="350.0" opacity="0.0" prefHeight="61.0" prefWidth="286.0" text="無" textAlignment="CENTER" textOverrun="CENTER_ELLIPSIS" AnchorPane.topAnchor="350.0">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font></Label>
+      <ListView fx:id="lvDisease" fixedCellSize="40.0" layoutX="400.0" layoutY="300.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: B3B3B9;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="400.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="310.0">
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect></ListView>
+      <Button fx:id="btnClear" layoutX="101.0" layoutY="286.0" mnemonicParsing="false" onAction="#btnClearClick" prefHeight="48.0" prefWidth="166.0" text="清除紀錄" AnchorPane.leftAnchor="101.0">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Label fx:id="lblTime" layoutX="134.0" layoutY="519.0" opacity="0.0" text="11:30">
+         <font>
+            <Font name="Bell MT Bold" size="56.0" />
+         </font></Label>
+      <Label fx:id="lblText" layoutX="88.0" layoutY="494.0" opacity="0.0" text="自動喝水吃食物倒數">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblX" layoutX="14.0" layoutY="14.0" opacity="0.0" text="x" />
+      <Button fx:id="btn" layoutX="333.0" layoutY="115.0" mnemonicParsing="false" onAction="#btnClick" opacity="0.0" text="Button" />
+      <Label layoutX="163.0" layoutY="12.0">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <CheckBox fx:id="chkEat" layoutX="279.0" layoutY="223.0" mnemonicParsing="false" text="自動吃食物">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font></CheckBox>
+   </children>
+   <effect>
+      <Blend />
+   </effect>
+</AnchorPane>
