@@ -1,5 +1,5 @@
 # GTA5Helper
-Help user to AFK in FiveM RedDevil server.
+Help user AFK in FiveM RedDevil server.
 
 Written in June, 2022.
 
